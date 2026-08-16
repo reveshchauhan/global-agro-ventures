@@ -92,7 +92,7 @@ function ContactPage() {
               <label className="text-sm font-medium" htmlFor="interest">
                 Area of interest
               </label>
-              <select id="interest" name="interest" className={fieldClass} defaultValue={services[0].title}>
+              <select id="interest" name="interest" className={fieldClass} defaultValue={services[0]?.title}>
                 {services.map((s) => (
                   <option key={s.slug}>{s.title}</option>
                 ))}
